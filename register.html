@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | LearnHub</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Learn<span>Hub</span> 🎓</a>
+    <button class="nav-toggle" aria-label="Open menu">☰ Menu</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="materials.html">Materials</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container auth-wrap">
+  <section class="auth-card">
+    <span class="eyebrow">JOIN LEARNHUB</span>
+    <h1>Create Account</h1>
+    <p class="muted">Start your learning journey today.</p>
+
+    <div id="message" class="notice" hidden></div>
+
+    <form id="register-form">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input id="name" type="text" placeholder="Enter your full name"
+          minlength="2" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input id="email" type="email" placeholder="you@example.com"
+          required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password"
+          placeholder="At least 6 characters" minlength="6" required>
+      </div>
+
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input id="confirm-password" type="password"
+          placeholder="Enter password again" required>
+      </div>
+
+      <button class="btn full" type="submit">Register Now</button>
+    </form>
+
+    <p class="form-note">
+      Already have an account?
+      <a href="login.html" style="color:var(--blue)">Login here</a>
+    </p>
+
+    <p class="form-note">
+      Demo project only. Do not use a real password.
+    </p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <strong>LearnHub 🎓</strong>
+    <p>© <span data-year></span> LearnHub</p>
+  </div>
+</footer>
+
+</body>
+</html>

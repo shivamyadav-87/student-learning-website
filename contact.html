@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | LearnHub</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+ 
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Learn<span>Hub</span> 🎓</a>
+    <button class="nav-toggle" aria-label="Open menu">☰ Menu</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="materials.html">Materials</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-top">
+    <div class="container page-heading">
+      <span class="eyebrow">GET IN TOUCH</span>
+      <h1 style="margin-top:12px">Contact Us</h1>
+      <p>Have a question or suggestion? Send us a message.</p>
+    </div>
+  </section>
+
+  <section class="container page-content">
+    <div class="about-grid">
+
+      <div class="feature">
+        <h2>Let's Connect!</h2>
+        <p class="muted">
+          We welcome your questions and suggestions about our
+          student learning platform.
+        </p>
+        <br>
+        <p>📧 Email: hello@learnhub.example</p>
+        <p>🎓 Student Learning Support</p>
+        <p>💻 Online Education</p>
+        <br>
+        <a href="courses.html" class="btn">Explore Courses</a>
+      </div>
+
+      <div class="auth-card" style="width:100%">
+        <h2>Send a Message</h2>
+
+        <div id="message" class="notice" hidden></div>
+
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="contact-name">Your Name</label>
+            <input id="contact-name" type="text"
+              placeholder="Enter your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">Email Address</label>
+            <input id="contact-email" type="email"
+              placeholder="Enter your email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Your Message</label>
+            <textarea id="contact-message"
+              placeholder="Write your message..." required></textarea>
+          </div>
+
+          <button class="btn full" type="submit">
+            Submit Message
+          </button>
+        </form>
+
+        <p class="form-note">
+          This demo form displays a confirmation but does not
+          actually send an email.
+        </p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <strong>LearnHub 🎓</strong>
+    <p>© <span data-year></span> LearnHub</p>
+  </div>
+</footer>
+
+</body>
+</html>

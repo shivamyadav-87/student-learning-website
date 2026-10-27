@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | LearnHub</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Learn<span>Hub</span> 🎓</a>
+    <button class="nav-toggle" aria-label="Open menu">☰ Menu</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="materials.html">Materials</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container auth-wrap">
+  <section class="auth-card">
+    <span class="eyebrow">WELCOME BACK</span>
+    <h1>Student Login</h1>
+    <p class="muted">Login to continue learning.</p>
+
+    <div id="message" class="notice" hidden></div>
+
+    <form id="login-form">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input id="email" type="email" placeholder="you@example.com"
+          autocomplete="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password"
+          placeholder="Enter your password"
+          autocomplete="current-password" required>
+      </div>
+
+      <button class="btn full" type="submit">Login</button>
+    </form>
+
+    <p class="form-note">
+      New student?
+      <a href="register.html" style="color:var(--blue)">Create an account</a>
+    </p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <strong>LearnHub 🎓</strong>
+    <p>© <span data-year></span> LearnHub</p>
+  </div>
+</footer>
+
+</body>
+</html>
